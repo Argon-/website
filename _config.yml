@@ -7,9 +7,10 @@ description: "Things, stuff, random stuff, arbitrary stuff and things."
 excerpt_separator: "<!-- more -->"
 
 # Build settings
+safe: true
 destination: _site_remote
 #baseurl: "http://localhost/~Julian/www/Index/_site"
 markdown: kramdown
 highlighter: pygments
 encoding: utf-8
-permalink: pretty
+permalink: /:year/:month/:day/:title/
