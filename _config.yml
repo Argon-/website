@@ -8,7 +8,7 @@ excerpt_separator: "<!-- more -->"
 
 # Build settings
 destination: _site_remote
-#baseurl: "http://localhost/~Julian/www/Index/_site" 
+#baseurl: "http://localhost/~Julian/www/Index/_site"
 markdown: kramdown
 highlighter: pygments
 encoding: utf-8
