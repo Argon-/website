@@ -2,7 +2,7 @@
 title: Index
 #email: your-email@domain.com
 description: "Things, stuff, random stuff, arbitrary stuff and things."
-#baseurl: "http://localhost/~Julian/www/Index/_site"
+#baseurl: "http://localhost/~Julian/www/Index/_site" 
 #twitter_username: MyFakeAcc
 #github_username: Argon-
 highlighter: pygments
