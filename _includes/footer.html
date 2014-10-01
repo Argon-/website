@@ -56,7 +56,7 @@
     <div class="footer-col-3 column">
       <ul>
         <li><p class="text">{{ site.description }}</p></li>
-        <li><a class="site-nav page-link" href="/archive/">Archive</a></li>
+        <li><a class="site-nav page-link" href="{{ post.url | prepend: site.baseurl }}/archive/">Archive</a></li>
       </ul>
     </div>
 

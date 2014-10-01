@@ -16,7 +16,7 @@ permalink: /blog/
 
         <article class="post-content post-content-truncate">
           {{ post.excerpt }}
-          <a href="{{ post.url }}">Read more...</a>
+          <a href="{{ post.url | prepend: site.baseurl }}">Read more...</a>
         </article>
 
       </div>
