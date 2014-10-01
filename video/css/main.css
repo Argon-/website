@@ -1,0 +1,138 @@
+@font-face{ 
+    font-family: 'Raleway Thin';
+    src: url('fonts/raleway_thin-webfont.eot');
+    src: url('fonts/raleway_thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/raleway_thin-webfont.woff') format('woff'),
+         url('fonts/raleway_thin-webfont.ttf') format('truetype'),
+         url('fonts/raleway_thin-webfont.svg#webfont') format('svg');
+}
+
+body {
+    font-family : "Raleway Thin", Helvetica, Arial, sans-serif;
+    font-size   : 18px;
+    line-height : 1.25;
+    font-weight : 200;
+    overflow-y  : scroll;
+}
+
+p {
+}
+
+p.footer {
+    float      : right;
+    text-align : right;
+}
+
+p.linkback {
+    float      : left;
+    text-align : left; 
+}
+
+div {
+}
+
+div.video {
+    margin-left: 40px;
+    text-align : center; 
+}
+
+div#header {
+    width        : 1320px;
+    margin       : auto;
+    margin-top   : 20px;
+    margin-bottom: 10px;
+
+    font-size   : 14px;
+    line-height : 1.2;
+    font-weight : 300;
+}
+
+div#content { 
+    width        : 1320px;
+    margin       : auto;
+    margin-top   : 30px;
+    margin-bottom: 10px;
+}
+
+div#footer {
+    width        : 1320px;
+    margin       : auto;
+    margin-top   : 30px;
+    margin-bottom: 10px;
+
+    font-size   : 14px;
+    line-height : 1.2;
+    font-weight : 300;
+}
+
+.container {
+}
+
+.container div {
+}
+
+.container .container_prefix {
+    float       : left;
+    font-size   : 48px;
+    font-weight : 200;
+}
+
+.container .container_title {
+    margin-left : 60px;
+    font-size   : 48px;
+    font-weight : 200;
+}
+
+.container .container_content {
+    display : none;
+    margin-bottom : 0px;
+}
+
+h1 {
+    font-size  : 48px;
+    font-weight: 200;
+    margin     : 2px;
+}
+
+h2 {
+    font-size  : 36px;
+    font-weight: 200;
+    margin     : 2px;
+}
+
+h3 {
+    font-size  : 36px;
+    font-weight: 200;
+    margin     : 2px;
+}
+
+
+A:link {
+    text-decoration: none;
+    color : black;
+}
+
+A:hover {
+    text-decoration : none;
+    color : navy;
+}
+
+A:active {
+    text-decoration : none;
+    color : black;
+}
+
+A:visited {
+    text-decoration : none;
+    color : navy;
+}
+
+ul#small {
+    margin-left : 20px;
+    font-size   : 8pt;
+}
+
+ul#small li {
+    padding    : 0.1em;
+    list-style : circle
+}
