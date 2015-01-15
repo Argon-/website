@@ -1,3 +1,22 @@
+@font-face{ 
+    font-family: 'Raleway Regular';
+    src: url('fonts/raleway-regular.eot');
+    src: url('fonts/raleway-regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/raleway-regular.woff') format('woff'),
+         url('fonts/raleway-regular.ttf') format('truetype'),
+         url('fonts/raleway-regular.svg#webfont') format('svg');
+}
+
+@font-face{ 
+    font-family: 'Raleway Thin';
+    src: url('fonts/raleway-thin.eot');
+    src: url('fonts/raleway-thin.eot?#iefix') format('embedded-opentype'),
+         url('fonts/raleway-thin.woff') format('woff'),
+         url('fonts/raleway-thin.ttf') format('truetype'),
+         url('fonts/raleway-thin.svg#webfont') format('svg');
+}
+
+
 /* Base */
 /* ----------------------------------------------------------*/
 
@@ -9,9 +28,9 @@
 html, body { height: 100%; }
 
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Raleway Regular", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.25;
   font-weight: 300;
   background-color: #fdfdfd; /* 343434 */
 }
