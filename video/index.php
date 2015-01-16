@@ -121,7 +121,7 @@ layout: null
 
 <?php if (!$noexpand) { ?>
     setTimeout(function() {
-        $("div.container_title:eq(<?php echo max($fcount - $expandnum, 0); ?>)").trigger("click");
+        $("div.container_title:eq(<?php echo max($fcount - 1 - $expandnum, 0); ?>)").trigger("click");
     }, 500);
 <?php } ?>
 </script>
