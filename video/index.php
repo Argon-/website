@@ -21,7 +21,7 @@ layout: null
 
 
 <div id="content">
-    <noscript><h3>This website requires JavaScript.</h3></noscript>
+    <noscript><p class="jsnotice">This website requires JavaScript.</p></noscript>
     <div class="container">
 
     <script type="text/javascript">

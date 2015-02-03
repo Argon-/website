@@ -28,6 +28,14 @@ p.header {
     text-align : left;
 }
 
+p.jsnotice {
+    display      : block;
+    margin-top   : 16px;
+    margin-bottom: 16px;
+    margin-left  : 0;
+    margin-right : 0;
+    font-weight  : bold;
+}
 
 p.linkback {
     float      : left;
