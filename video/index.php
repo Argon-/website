@@ -12,6 +12,14 @@ layout: null
 <body>
 
 
+<!--
+Hi. Valid parameters:
+   - &loop
+   - &expand=<video id>
+   - &autoplay (only with &expand)
+-->
+
+
 <div id="header">
     <p class="header">
         Encoding experiments.
@@ -38,12 +46,13 @@ layout: null
     $fcount = $files ? count($files) : 0;
     $findex = $fcount;
 
-    $autoplay = isset($_GET["autostart"]) || isset($_GET["autoplay"]) || isset($_GET["auto"]);
-    $noexpand = isset($_GET["noexpand"]);
+    $loop = isset($_GET["loop"]) || isset($_GET["l"]);
+    $autoplay = isset($_GET["autoplay"]) || isset($_GET["auto"]) || isset($_GET["a"]);
+    $noexpand = isset($_GET["noexpand"]) || isset($_GET["noe"]);
     if (isset($_GET['expand']) && preg_match('/^\d+$/', $_GET['expand']))
         $expandnum = abs(intval($_GET['expand'])) > 9999 ? $findex : abs(intval($_GET['expand']));
     else
-        $expandnum = $findex;    // first entry
+        $expandnum = 0;    // no entry
     
     if (!$findex) {
         echo "<h3>No videos found.</h3>" . PHP_EOL;
@@ -63,7 +72,7 @@ layout: null
         <div class="container_title"><?php echo $title; ?></div>
         <div class="container_content">
             <div class="video">
-                <video controls <?php if ($autoplay && $findex == $expandnum) echo "autoplay "; ?>preload="metadata">
+                <video controls <?php if ($loop) echo "loop "; if ($autoplay && ($findex + 1) == $expandnum) echo "autoplay "; ?>preload="metadata">
                 <source src="<?php echo $file; ?>" type='video/webm; codecs="vp8.0, vorbis"'>
                     <p>Your browser does not support HTML5 video.</p>
                 </video>
@@ -95,7 +104,7 @@ layout: null
 
 
 <div id="footer">
-    <?php if (isset($_GET["linkback"])) { ?>
+    <?php if (isset($_GET["linkback"]) || isset($_GET["lb"])) { ?>
     <p class="linkback">
         <a href="{{ site.baseurl }}/">Main Page</a>
     </p>
@@ -115,10 +124,10 @@ layout: null
         if (!$content.is(":visible")) {
             $('html, body').animate({
                 scrollTop: $title.offset().top + $('window').height() - content_margin
-            }, 400);
+            }, <?php echo $autoplay ? "200" : "400" ?>);
         }
 
-        $content.slideToggle(400, function() {
+        $content.slideToggle(<?php echo $autoplay ? "200" : "400" ?>, function() {
             $prefix.text(function() {
                 return $content.is(":visible") ? ">>" : ">";
             });
@@ -127,8 +136,8 @@ layout: null
 
 <?php if (!$noexpand) { ?>
     setTimeout(function() {
-        $("div.container_title:eq(<?php echo max($expandnum, 0); ?>)").trigger("click");
-    }, 500);
+        $("div.container_title:eq(<?php echo max($fcount - $expandnum, 0); ?>)").trigger("click");
+    }, <?php echo $autoplay ? "200" : "600" ?>);
 <?php } ?>
 </script>
 </body>
