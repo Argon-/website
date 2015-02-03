@@ -41,9 +41,9 @@ layout: null
     $autoplay = isset($_GET["autostart"]) || isset($_GET["autoplay"]) || isset($_GET["auto"]);
     $noexpand = isset($_GET["noexpand"]);
     if (isset($_GET['expand']) && preg_match('/^\d+$/', $_GET['expand']))
-        $expandnum = abs(intval($_GET['expand'])) > 999 ? $findex - 1 : abs(intval($_GET['expand']));
+        $expandnum = abs(intval($_GET['expand'])) > 9999 ? $findex : abs(intval($_GET['expand']));
     else
-        $expandnum = $findex - 1;    // first entry
+        $expandnum = $findex;    // first entry
     
     if (!$findex) {
         echo "<h3>No videos found.</h3>" . PHP_EOL;
@@ -127,7 +127,7 @@ layout: null
 
 <?php if (!$noexpand) { ?>
     setTimeout(function() {
-        $("div.container_title:eq(<?php echo max($fcount - 1 - $expandnum, 0); ?>)").trigger("click");
+        $("div.container_title:eq(<?php echo max($expandnum, 0); ?>)").trigger("click");
     }, 500);
 <?php } ?>
 </script>
