@@ -1,5 +1,0 @@
-AuthType Basic
-AuthName "login"
-AuthUserFile /home/zieglejn/public_html/index/video/.htpasswd
-require valid-user
-
