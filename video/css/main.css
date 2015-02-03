@@ -23,6 +23,12 @@ p.footer {
     text-align : right;
 }
 
+p.header {
+    float      : left;
+    text-align : left;
+}
+
+
 p.linkback {
     float      : left;
     text-align : left; 

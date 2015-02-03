@@ -13,6 +13,13 @@ layout: null
 <body>
 
 
+<div id="header">
+    <p class="header">
+        This website makes extensive use of VP8/Vorbis encoded video.
+    </p>
+</div>
+
+
 <div id="content">
     <noscript><h3>This website requires JavaScript.</h3></noscript>
     <div class="container">
