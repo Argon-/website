@@ -55,7 +55,7 @@ div#header {
     margin-top   : 20px;
     margin-bottom: 10px;
 
-    font-size   : 14px;
+    font-size   : 18px;
     line-height : 1.2;
     font-weight : 300;
 }
@@ -73,7 +73,7 @@ div#footer {
     margin-top   : 30px;
     margin-bottom: 10px;
 
-    font-size   : 18px;
+    font-size   : 14px;
     line-height : 1.2;
     font-weight : 300;
 }
