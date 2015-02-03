@@ -24,7 +24,6 @@ p.footer {
 }
 
 p.header {
-    float      : left;
     text-align : left;
 }
 
@@ -34,7 +33,6 @@ p.jsnotice {
     margin-bottom: 16px;
     margin-left  : 0;
     margin-right : 0;
-    font-weight  : bold;
 }
 
 p.linkback {

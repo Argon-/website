@@ -15,7 +15,7 @@ layout: null
 
 <div id="header">
     <p class="header">
-        This website makes extensive use of VP8/Vorbis encoded video.
+        Encoding experiments.
     </p>
 </div>
 
