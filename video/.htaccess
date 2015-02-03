@@ -1,4 +1,5 @@
-AddType video/ogg ogv
-AddType audio/ogg ogg oga
-AddType video/webm webm
+AuthType Basic
+AuthName "login"
+AuthUserFile /home/zieglejn/public_html/index/video/.htpasswd
+require valid-user
 
