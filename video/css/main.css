@@ -28,11 +28,12 @@ p.header {
 }
 
 p.jsnotice {
-    display      : block;
-    margin-top   : 16px;
-    margin-bottom: 16px;
-    margin-left  : 0;
-    margin-right : 0;
+    font-size    : 36px;
+    font-weight  : 300;
+    color        : #e00;
+    margin       : 2px;
+    margin-top   : 24px;
+    margin-bottom: 24px;
 }
 
 p.linkback {
@@ -72,7 +73,7 @@ div#footer {
     margin-top   : 30px;
     margin-bottom: 10px;
 
-    font-size   : 14px;
+    font-size   : 18px;
     line-height : 1.2;
     font-weight : 300;
 }
