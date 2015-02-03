@@ -14,3 +14,4 @@ markdown: kramdown
 highlighter: pygments
 encoding: utf-8
 permalink: /:year/:month/:day/:title/
+relative_permalinks: true
