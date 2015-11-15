@@ -1,7 +1,7 @@
 # Site settings
 title: Index
 #email: your-email@domain.com
-description: "Things, stuff, random stuff, arbitrary stuff."
+description: "Random stuff, arbitrary stuff and... stuff."
 #twitter_username: MyFakeAcc
 #github_username: Argon-
 excerpt_separator: "<!-- more -->"
@@ -9,7 +9,7 @@ excerpt_separator: "<!-- more -->"
 # Build settings
 safe: true
 destination: _site_remote
-baseurl: "http://w3studi.informatik.uni-stuttgart.de/~zieglejn/index" 
+baseurl: "http://w3studi.informatik.uni-stuttgart.de/~zieglejn/index"
 markdown: kramdown
 highlighter: pygments
 encoding: utf-8

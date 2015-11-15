@@ -6,13 +6,15 @@
 
     <div class="footer-col-1 column">
       <ul>
-        <li>{{ site.title }}</li>
+        <!--<li>{{ site.title }}</li>-->
+        <li><p class="text">{{ site.description }}</p></li>
         <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
         <!--<li>Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></li>-->
       </ul>
     </div>
 
     <div class="footer-col-2 column">
+      <!--
       <ul>
         {% if site.github_username %}<li>
           <a href="https://github.com/{{ site.github_username }}">
@@ -51,11 +53,12 @@
           </a>
         </li>{% endif %}
       </ul>
+      -->
     </div>
 
     <div class="footer-col-3 column">
       <ul>
-        <li><p class="text">{{ site.description }}</p></li>
+        <!--<li><p class="text">{{ site.description }}</p></li>-->
         <li><a class="site-nav page-link" href="{{ post.url | prepend: site.baseurl }}/archive/">Archive</a></li>
       </ul>
     </div>
