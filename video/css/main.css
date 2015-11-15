@@ -1,4 +1,4 @@
-@font-face{ 
+@font-face{
     font-family: 'Raleway Thin';
     src: url('fonts/raleway_thin-webfont.eot');
     src: url('fonts/raleway_thin-webfont.eot?#iefix') format('embedded-opentype'),
@@ -38,7 +38,7 @@ p.jsnotice {
 
 p.linkback {
     float      : left;
-    text-align : left; 
+    text-align : left;
 }
 
 div {
@@ -46,7 +46,7 @@ div {
 
 div.video {
     margin-left: 40px;
-    text-align : center; 
+    text-align : center;
 }
 
 div#header {
@@ -60,7 +60,7 @@ div#header {
     font-weight : 300;
 }
 
-div#content { 
+div#content {
     width        : 1320px;
     margin       : auto;
     margin-top   : 30px;

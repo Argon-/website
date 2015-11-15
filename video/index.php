@@ -53,7 +53,7 @@ Hi. Valid parameters:
         $expandnum = abs(intval($_GET['expand'])) > 9999 ? $findex : abs(intval($_GET['expand']));
     else
         $expandnum = 0;    // no entry
-    
+
     if (!$findex) {
         echo "<h3>No videos found.</h3>" . PHP_EOL;
     }
@@ -67,7 +67,7 @@ Hi. Valid parameters:
         $title = str_replace("_", "-", $title);
         echo PHP_EOL;
 ?>
-        <!-- #<?php echo $filenum; ?> -->
+        <!-- ID: <?php echo $filenum; ?> -->
         <div class="container_prefix">&gt;</div>
         <div class="container_title"><?php echo $title; ?></div>
         <div class="container_content">
@@ -88,7 +88,7 @@ Hi. Valid parameters:
 
 
 <script type="text/javascript">
-    if (!can_play) 
+    if (!can_play)
     {
         var div_video = document.getElementsByClassName("video");
         for (var i = 0; i < div_video.length; ++i) {
