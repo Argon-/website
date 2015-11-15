@@ -4,12 +4,7 @@ title: About
 permalink: /about/
 ---
 
-empty
+There's not much to say about an empty website.
 
-<!---
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
--->
+In case you wonder: this site's name is indeed "index".
+I'm not yet sure why but rest assured I'll definitily report back once I know!
