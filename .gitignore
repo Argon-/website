@@ -1,4 +1,9 @@
+.DS_Store
+htaccess
+htpasswd
+.htaccess
+.htpasswd
+
 _site
 _site_remote
-.DS_Store
-*.webm
+video/media
